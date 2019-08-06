@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+  <style type="text/css">
+    h1{
+      color:#E9967A;
+      font-size:30px;
+      text-align:center;
+    }
+    div{
+      font-size:18px;
+      
+    }
+  </style>
+</head>
+<body>
+  <h1>服务器</h1>
+  <h2>内网穿透</h2>
+  <div>
+    <p>工具介绍</p>
+    <p>Ngrok：https://ngrok.com/</p>
+    <p>Ssh：http://www.harding.mote.ca/autossh/ 配合autossh工具使用 </p>
+    <p>Natapp：https//nataoo.cn/</p>
+    <p>Frp：https//github.com/fatedier/frp</p>
+    <p>Lanproxy：https://github.com/ffay/lanproxy</p>
+    <p>Splike：https://github.com/slince/spike</p>
+    <p>花生壳：https://hsk.oray.com/ 个人开发不是很友好......</p>
+    <p>2019/6/16</p>
+  </div>
+  <div id="blink">
+    <p>页面更新中,尽请期待......(接受各种建议)</p>
+    <p>In updating the page, please look forward to...(accept all kinds of suggestions)</p>
+    <p>ページ更新中、ぜひご期待ください... (さまざまなアドバイスを受ける)</p>
+  </div>
+</body>
+  <script language="javascript">
+    function changeColor(){
+    var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray";
+    color=color.split("|");
+    document.getElementById("blink").style.color=color[parseInt(Math.random() * 
+    color.length)];
+    }
+    setInterval("changeColor()",200);
+  </script>
+</html>
